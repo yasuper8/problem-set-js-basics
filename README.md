@@ -16,10 +16,10 @@ There are a number of options for running/executing your code. They all have the
 
 - From the browser:
     - Using the [Chrome Developer Console](https://developers.google.com/web/tools/chrome-devtools/debug/console/console-ui?hl=en#opening-the-console)
-        * **Pro-Tip**: Use `↑` and `↓` to cycle through your code history. Pressing `→`` selects the current suggestion. If there’s a single suggestion, `Tab` to select it.
+        * **Pro-Tip**: Use `↑` and `↓` to cycle through your code history. Pressing `→` selects the current suggestion. If there’s a single suggestion, `Tab` to select it.
     + Using [Javascript Snippets](https://developers.google.com/web/tools/chrome-devtools/debug/snippets/) to execute and save your scripts.
 - From the command line:
     + Using the [Node REPL / Shell](http://www.nodelabs.org/repl.html)
         * **Pro-Tip**: Type `.exit` to quit. Use `↑` and `↓` to cycle through your code history.
     + Using the [`node some-file.js` command](http://javascript.cs.lmu.edu/notes/commandlinejs/)
-        * **Pro-Tip**: Use `ctrl` + `c` to quit "hanging" programs. And make sure to `console.log("your output")`.
+        * **Pro-Tip**: Use `ctrl` + `c` (shortcut) to quit "hanging" programs. And make sure to `console.log("your output")`.
