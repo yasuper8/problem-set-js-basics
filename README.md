@@ -7,7 +7,8 @@ For each problem, modify the relevant file in the `challenges`folder. We encoura
 You will [submit this problem set for review](https://github.com/SF-WDI-LABS/shared_modules/blob/master/how-to/submit-homework.md).
 
 ## Challenges
-- [Bottles of Adult Beverages](/challenges/bottles-of-beer.js)
+- [Bottles of Adult Beverages](/challenges/bottles-of-beer-song.js)
+- [Shakespearian Insult Generator](/challenges/shakespearian-insult-generator.js)
 
 ## Executing your code
 There are a number of options for running/executing your code. They all have their uses, so we encourage you to learn all of them:
