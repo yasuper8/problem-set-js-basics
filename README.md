@@ -9,6 +9,7 @@ You will [submit this problem set for review](https://github.com/SF-WDI-LABS/sha
 ## Challenges
 - [Bottles of Adult Beverages](/challenges/bottles-of-beer-song.js)
 - [Shakespearian Insult Generator](/challenges/shakespearian-insult-generator.js)
+- [Palindrome Detector](/challenges/palindrome-detector.js)
 
 ## Executing your code
 There are a number of options for running/executing your code. They all have their uses, so we encourage you to learn all of them:
