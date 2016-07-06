@@ -17,3 +17,21 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+function generateInsult(n) {
+  var name = prompt("What is your name?");
+  var noun = third_word[parseInt(Math.random() * third_word.length)];
+  if (n === 1) {
+    alert("Why, " + name + " you " + noun + "!");
+  }
+  // Join the first two arrays, since their contents could be used any number of times for a gramatically correct sentence
+  // In this case, I'm making the assumption that it's not important to use words from each array equally
+  var descriptors = first_word.concat(second_word);
+  var chosenDescriptors = [];
+  // Accumulate an array of adjectives
+  for (var i=0; i<(n-1); i++) {
+    chosenDescriptors.push(descriptors[parseInt(Math.random() * descriptors.length)]);
+  }
+  // Join the adjectives array and insert it into a sentence
+  alert("Why, " + name + " you " + chosenDescriptors.join(", ") + " " + noun + "!");
+}
