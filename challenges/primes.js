@@ -12,20 +12,26 @@
 // YOUR CODE HERE
 
 function isPrime(num) {
+  // Start your loop at 2, since all integers will be divisible by 1 and you can't divide by 0
   for (var i=2; i<num; i++) {
     if (num % i === 0) {
-      // If num is evenly divisble by any number, it is not Prime
+      // If num is divisble by any value of i, it is not prime
+      // Return false and stop checking if this condition is met
       return false;
     }
   }
+  // If the loop completes without returning false, return true. That number is prime!
   return true;
 }
 
-function isPrime(value) {
-    for(var i = 2; i < value; i++) {
-        if(value % i === 0) {
-            return false;
-        }
+function primes(max) {
+  var primesArray = [];
+  // Start looping at 2, since 0 and 1 aren't primes
+  for (var i=2; i<max; i++) {
+    if (isPrime(i)) {
+      primesArray.push(i);
     }
-    return value > 1;
+  }
+  // Return the array containing all of the prime numbers less than the max
+  return primesArray;
 }
