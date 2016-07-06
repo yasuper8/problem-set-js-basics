@@ -22,6 +22,23 @@
 
 // YOUR CODE HERE
 
+// Using Array methods
 function isPalindrome(input) {
   return (input.split('').reverse().join('') === input);
+}
+
+// Without Arrays
+function isPalindrome(input) {
+  var midpoint=parseInt(input.length/2);
+  for (var i=0; i<midpoint; i++) {
+    // Compare the first letter of the first half and the last letter of the second half
+    // Walk towards the midpoint of the word, comparing each letter
+    // (input.length-1) is the last letter of the word
+    if (input[i] !== input[(input.length-1)-i]) {
+      return false;
+    }
+  }
+  // If the loop finishes comparing both halves of the word without returning false, it's a palindrome!
+  // Return true.
+  return true;
 }
