@@ -18,6 +18,7 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 
+// With Bonuses
 function generateInsult(n) {
   var name = prompt("What is your name?");
   var noun = third_word[parseInt(Math.random() * third_word.length)];
@@ -34,4 +35,12 @@ function generateInsult(n) {
   }
   // Join the adjectives array and insert it into a sentence
   alert("Why, " + name + " you " + chosenDescriptors.join(", ") + " " + noun + "!");
+}
+
+// Without Bonuses
+function generateInsult() {
+  var first = first_word[parseInt(Math.random() * first_word.length)];
+  var second = second_word[parseInt(Math.random() * second_word.length)];
+  var third = third_word[parseInt(Math.random() * third_word.length)];
+  return ("You " + first + ", " + second + ", " + third + ", you!");
 }
