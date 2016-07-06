@@ -21,3 +21,7 @@
 */
 
 // YOUR CODE HERE
+
+function isPalindrome(input) {
+  return (input.split('').reverse().join('') === input);
+}
