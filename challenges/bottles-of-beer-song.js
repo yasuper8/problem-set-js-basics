@@ -23,6 +23,7 @@
 
 // YOUR CODE HERE
 
+// With bonuses
 function bottlesOfBeer(n) {
   for (var i=n; i>0; i--) {
     if (i > 1) {
@@ -40,5 +41,16 @@ function bottlesOfBeer(n) {
       console.log("Take it down and pass it around,");
       console.log("No more bottles of beer on the wall! :(");
     }
+  }
+}
+
+// Without bonuses
+function bottlesOfBeer(n) {
+  // Start looping at n (the max number) and count down
+  for (var i=n; i>0; i--) {
+    console.log(i + " bottles of beer on the wall,");
+    console.log(i + " bottles of beer!");
+    console.log("Take one down and pass it around,");
+    console.log((i-1) + " bottles of beer on the wall...");
   }
 }
