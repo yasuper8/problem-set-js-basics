@@ -21,3 +21,14 @@
 */
 
 // YOUR CODE HERE
+function palindrome(str) {
+  var reversedStr = ''
+  for (var i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  if(reversedStr === str) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
