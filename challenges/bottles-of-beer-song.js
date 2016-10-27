@@ -22,3 +22,11 @@
 */
 
 // YOUR CODE HERE
+
+for (var i = 5; i >= 1; i--) {
+  if(i === 1) {
+    console.log(i + " bottle of beer on the wall \n" + i + " bottle of beer! \n" + "Take one down and pass it around, \nNo more bottles of beer on the wall..." )
+  } else {
+    console.log(i + " bottles of beer on the wall \n" + i + " bottles of beer! \n" + "Take one down and pass it around, \n" + (i - 1) + " bottles of beer on the wall..." );
+  }
+}
