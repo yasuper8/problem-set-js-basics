@@ -10,3 +10,20 @@
 */
 
 // YOUR CODE HERE
+
+function isPrime(num) {
+  var counter;
+  if (num === 0 || num === 1) {
+    console.log(false);
+  }
+  for (var i = 1; i <= 12; i++) {
+    if (num % i === 0) {
+      counter += 0;
+    } else {
+      counter += 1;
+    }
+  }
+  if (counter === 0){
+    console.log(true);
+  }
+}

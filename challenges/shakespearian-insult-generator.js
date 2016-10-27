@@ -17,3 +17,18 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+function randomNum(n) {
+  return Math.floor(Math.random() * n);
+}
+
+function generateInsult() {
+  var numFirstArray = first_word.length;
+  var numSecondArray = second_word.length;
+  var numThirdArray = third_word.length;
+  var randomWords = "";
+  randomWords += " " + first_word[randomNum(numFirstArray)];
+  randomWords += " " + second_word[randomNum(numSecondArray)];
+  randomWords += " " + third_word[randomNum(numThirdArray)];
+  console.log(randomWords);
+}
