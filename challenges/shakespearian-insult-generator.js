@@ -1,3 +1,6 @@
+console.log("generator.js linked");
+
+
 /*
   Shakesperian Insult Generator
 
@@ -18,17 +21,56 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 
+
+
+$line = $('#sentense');
+$name = $(".nameInput").val();
+
+
+
 function randomNum(n) {
   return Math.floor(Math.random() * n);
 }
 
-function generateInsult() {
+// function generateInsult() {
+//   var numFirstArray = first_word.length;
+//   var numSecondArray = second_word.length;
+//   var numThirdArray = third_word.length;
+//   var randomWords = "";
+//   randomWords += " " + first_word[randomNum(numFirstArray)];
+//   randomWords += " " + second_word[randomNum(numSecondArray)];
+//   randomWords += " " + third_word[randomNum(numThirdArray)];
+//   console.log(randomWords);
+// }
+//
+//
+// function generateInsult(name) {
+//   var numFirstArray = first_word.length;
+//   var numSecondArray = second_word.length;
+//   var numThirdArray = third_word.length;
+//   var randomWords = "Why " + name + ", you";
+//   randomWords += " " + first_word[randomNum(numFirstArray)];
+//   randomWords += " " + second_word[randomNum(numSecondArray)];
+//   randomWords += " " + third_word[randomNum(numThirdArray)] + "!";
+//   console.log(randomWords);
+// }
+
+
+function generateInsult(name) {
   var numFirstArray = first_word.length;
   var numSecondArray = second_word.length;
   var numThirdArray = third_word.length;
-  var randomWords = "";
+  var randomWords = "Why " + name + ", you";
   randomWords += " " + first_word[randomNum(numFirstArray)];
   randomWords += " " + second_word[randomNum(numSecondArray)];
-  randomWords += " " + third_word[randomNum(numThirdArray)];
+  randomWords += " " + third_word[randomNum(numThirdArray)] + "!";
   console.log(randomWords);
+  return randomWords;
 }
+
+$(".btn").on('click', function() {
+  generateInsult($name)
+  var htmlStr = $(randomWords).html;
+  $('#sentense').text(htmlStr);
+  console.log("btn clicked");
+});
